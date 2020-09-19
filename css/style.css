@@ -1,0 +1,335 @@
+/* Common Codes */
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body {
+	    font-family: Helvetica, Arial, sans-serif;
+}
+
+.mag-top {
+	margin-top: 10px;
+}
+
+.link {
+	margin-left: 10px;
+}
+
+.fa-question-circle {
+    color: #55575b;
+    font-size: 16px;
+}
+
+.font-weight {
+	font-weight: bold;
+}
+
+.nav {
+	background-color: #385898;
+	border-bottom: 1px solid #133783;
+}
+
+.nav .brand {
+	margin: 30px 0 10px 0;
+}
+
+.nav .brand-title {
+	color: #FFF;
+	font-size: 45px;
+	font-weight: bold;
+}
+
+.regestration {
+	margin-top: 20px;
+}
+
+.regestration .caption {
+    color: #FFF;
+    font-size: 14px;
+}
+
+.regestration input {
+    margin-top: 3px;
+    padding-left: 5px;
+    font-size: 14px;
+    border: 1px solid #000;
+    margin-right: 15px;
+}
+
+@media only screen and (max-width: 766px) {
+	.regestration input {
+		display: block;
+	}
+}
+
+.regestration button {
+    color: #FFF;
+    background-color: #4267b2;
+    border: 1px solid #29487d;
+    border-radius: 2px;
+    padding: 1px 4px;
+    margin-top: 3px;
+    margin-right: 40px;
+    font-size: 14px;
+}
+
+.regestration a {
+	color: #9cb4d8;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.regestration a:hover {
+	text-decoration: underline;
+	color: #9cb4d8;
+}
+
+.body {
+	background-color: #e9ebee;
+}
+
+.body .body-content {
+	padding-top: 20px;
+}
+
+.body-recent-logins .pd {
+	padding: 12px 0;
+	margin: 0;
+}
+
+.body-recent-logins.item {
+	border-radius: 4px;
+	margin-right: 20px;
+	background-color: #FFF;
+	transition: box-shadow .3s ease;
+	position: relative;
+}
+
+.body-recent-logins.item .close {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	color: rgba(0,0,0, .7);
+	transition: .2s ease;
+}
+
+.body-recent-logins.item:hover .close {
+	color: red;
+	font-size: 25px;
+	transform: translate(-10px,-10px);
+}
+
+.body-recent-logins.item:hover {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2);
+	cursor: pointer;
+}
+
+.body-recent-logins.item .icon {
+	position: relative;
+}
+
+.body-recent-logins.item .icon i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #385898;
+	font-size: 43px;
+}
+
+.body-recent-logins.item .pd {
+	font-size: 18px;
+}
+
+.body-recent-logins.item:last-child h4 {
+	color: #385898;
+}
+
+.account .new-account .text {
+	padding: 5px 6px;
+	border-radius: 5px;
+	border: 1px solid #bdc7d8;
+	margin: 15px 8px 8px 0;
+	font-size: 18px;
+}
+
+.account .mobile-password .mp {
+	width: 438px;
+	padding: 5px 6px;
+	margin-bottom: 8px;
+	border-radius: 5px;
+	border: 1px solid #bdc7d8;
+	font-size: 18px;
+}
+
+.account .birthday .birth-title {
+	color: #90949c;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 12px 0 6px 0;
+}
+
+.account .birthday select {
+    font-size: 13px;
+    height: 26px;
+}
+
+.account .gender .gender-title {
+	color: #90949c;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 5px 0 6px 0;
+}
+
+.account .gender input {
+	margin: 0 2px 0 8px;
+}
+
+.account .gender sub {
+	color: #1d2129;
+	margin-bottom: 28px;
+	margin-right: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.account .p {
+    font-size: 11px;
+    color: #505050;
+    width: 322px;
+    line-height: 15px;
+}
+
+.account .p .policy {
+    color: #385898;
+    font-size: 11px;
+}
+
+.account .btnn button {
+	background-color: #69a74e;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    padding: 7px 70px;
+    border: none;
+    border-radius: 5px;
+    text-shadow: 0 2px 2px rgba(0,0,0,.5);
+}
+
+.account .btnn button:hover {
+	opacity: .9;
+}
+
+hr {
+	opacity: .6;
+	margin-bottom: 8px;
+}
+
+.account .font {
+	font-size: 13px;
+	color: #666;
+	margin-top: 15px;
+}
+
+.account .co6 {
+	color: #385898;
+	font-weight: 700;
+}
+
+.overlay , .popup2 {
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(0,0,0,.5);
+    display: none;
+}
+
+.overlay .popup , .inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 277px;
+	background-color: #FFF;
+	border-radius: 4px;
+	text-align: center;
+}
+
+.popup2 .height {
+	height: 400px;
+}
+
+.popup2 .popup-image {
+	width: 200px;
+	height: 160px;
+	margin: auto;
+}
+
+.popup2 .popup-image img {
+	width: 100%;
+	padding: 20px;
+}
+
+.overlay .esc , .popup2 .escp {
+    font-size: 14px;
+    color: #767676;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}
+
+.overlay .popup-title , .popup2 .popup-title {
+	margin: 30px 0 15px 0;
+}
+
+.overlay .color , .popup2 .color2 {
+    width: 250px;
+    padding: 2px 0 2px 5px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid #e7e7e7;
+    border-radius: 2px;
+}
+
+.overlay .color::placeholder , .popup2 .color2::placeholder {
+	color: #969696;
+}
+
+.overlay .checkbox , .popup2 .checkbox2 {
+	margin-left: 10px;
+}
+
+.overlay .checkbox span , .popup2 .checkbox2 span {
+	margin-left: 5px;
+	font-size: 13px;
+	color: #606770;
+}
+
+.overlay button , .popup2 button {
+    background-color:  #4267b2;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.overlay button:hover , .popup2 button:hover {
+	background-color: #385898
+}
+
+.overlay a , .popup2 a {
+    font-size: 13px;
+    color: #385898;
+}
+
